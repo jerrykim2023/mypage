@@ -8,9 +8,11 @@
     <title>2023년 버킷리스트트</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap');
-        *{
+
+        * {
             font-family: 'Hahmlet', serif;
         }
+
         .title {
             color: white;
             background-color: tomato;
@@ -44,8 +46,22 @@
             background-size: cover;
             background-position: center;
         }
+
+        .failure1::after{
+            content: "(회사실적 미달로 B)";
+            color: blue;
+        }
+        .failure2::after{
+            content: "(게으르고, 잊어버림)";
+            color: blue;
+        }
+        .failure3::after{
+            content: "(의지+노력부족)";
+            color: red;
+        }
     </style>
-    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
 </head>
 
 <body class="bg-t3 center">
@@ -55,12 +71,12 @@
     <P class="msg">I'll be a Development PM in 2023 !</P>
     <!-- 박스 divsion -->
     <div class="row flex-row wrap">
-        <div class="bucket img1-t2 center">주소록 만들기 with VB.NET</div>
-        <div class="bucket img2 center">Ms-sql DB 개발 기초능력</div>
-        <div class="bucket img1-t4 center">Web 개발 기초능력</div>
-        <div class="bucket img2 center">팀 성과평가 B+ 이상</div>
-        <div class="bucket img1 center">승진하기</div>
-        <div class="bucket img2-t5 center">NAC, DLP 구축</div>
+        <div class="bucket img1-t2 center failure3">주소록 만들기 with VB.NET</div>
+        <div class="bucket img2 center done">Ms-sql DB 개발 기초능력</div>
+        <div class="bucket img1-t4 center failure2">Web 개발 기초능력</div>
+        <div class="bucket img2 center failure1">팀 성과평가 B+ 이상</div>
+        <div class="bucket img1 center done">승진하기</div>
+        <div class="bucket img2-t5 center done">NAC, DLP 구축</div>
     </div>
 
 </body>
